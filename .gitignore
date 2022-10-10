@@ -1,7 +1,21 @@
-*Thumbs.db
-.bundle
-.sass-cache
-Gemfile.lock
+# hidden files
+.*
+!.git*
+!.editorconfig
+!.nojekyll
+!.travis.yml
+!.husky
+!.commitlintrc.json
+!.versionrc.json
+
+# bundler cache
 _site
+vendor
+Gemfile.lock
+
+# rubygem
 *.gem
-*.bak
+
+# npm dependencies
+node_modules
+package-lock.json
