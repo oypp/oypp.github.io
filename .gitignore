@@ -1,6 +1,7 @@
-.DS_Store
-*/.DS_Store
-
-node_modules
-
+*Thumbs.db
+.bundle
+.sass-cache
+Gemfile.lock
 _site
+*.gem
+*.bak

@@ -1,34 +1,23 @@
 ---
-title: Tags
 layout: default
 ---
 
-{% include header.html %}
-
-<div class="g-banner tags-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
-    <h2>TAGS</h2>
-</div>
-
-<main class="tags-content">
-
-    <ul class="tags-list">
-        <li>
-        {% if site.recommend-tags and site.tags.size>0 %}
-            {% for tag in site.tags %}
-            <a href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
-            {% endfor %}
-        {% endif %}
-        </li>
-        
-        {% for tag in site.tags %}
-        <li>
-            <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
-            {% for post in tag[1] %}
-            <a class="tag-post" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a>
-            {% endfor %}
-        </li>
-        {% endfor%}
+<div class="well article">
+{% assign sortedtags = site.tags | sort %}
+{% for tag in sortedtags %}
+    <h2>{{ tag[0] | capitalize }}</h2>
+    <ul>
+        {% assign pages_list = tag[1] %}
+        {% for node in pages_list %}
+            {% if node.title != null %}
+            {% if group == null or group == node.group %}
+                <li><span class="post-date">
+                    {% assign date_format = site.date_format.tag %}
+                    {{ node.date | date: date_format }} </span></span><a href="{{ site.baseurl}}{{ node.url }}"> {{ node.title }}</a></li>
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+        {% assign pages_list = nil %}
     </ul>
-</main>
-    
-{% include footer.html %}
+{% endfor %}    
+</div>
