@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '哈哈哈...好开心'
-subtitle: '拥有独立主页第一天'
+subtitle: '我的第一篇博客'
 date: 2022-10-11
 author: Roc
 categories: 随笔
