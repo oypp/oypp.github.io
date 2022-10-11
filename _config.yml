@@ -1,7 +1,7 @@
 # Site settings 配置站点
-title: '欧阳鹏鹏的独立博客'
+title: 'Roc 的独立博客'
 description: '90后，Qt C++ 开发者/伪极客，热爱技术。很高兴能在这里与你分享我对技术和生活的思考。'
-keyword: '欧阳鹏鹏, 欧阳鹏鹏的独立博客, 欧阳鹏鹏的博客, 前端, 前端开发, 前端博客, javascript, vuejs, nodejs, 设计'
+keyword: 'Roc, Roc的独立博客, Roc的博客, 前端, 前端开发, 前端博客, javascript, vuejs, nodejs, 设计'
 url: '' # your host
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
@@ -24,7 +24,7 @@ footer:
   since: 2022
 
 # Author 配置博主信息
-author: '欧阳鹏鹏'
+author: 'Roc'
 nickname: '欧阳'
 bio: 'Qt C++ 开发者，热爱技术，简单乐观爱创造'
 avatar: '/assets/img/profile.png'
