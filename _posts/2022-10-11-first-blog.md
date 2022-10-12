@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '哈哈哈...好开心'
+title: '哈哈哈...好开心 &#128512; '
 subtitle: '我的第一篇博客'
 date: 2022-10-11
 author: Roc
