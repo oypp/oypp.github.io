@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
+
 <body>
-    <!--[if lt IE 10]>
-<div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
-<![endif]-->
-    <input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
-    <div class="visible">
-      {{ content }}
-    </div>
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <script src="{{ "/assets/js/prism.js" | relative_url }}"></script>
-    <script src="{{ "/assets/js/index.min.js" | relative_url }}"></script>
+    <!--[if IE]> 
+		<h1>请使用谷歌浏览器 <br />
+		或者360浏览器切换到极速模式! <br />
+		当前其他版本浏览器未经测试 <br />
+		可能布局会存在问题 <br />
+		</h1>
+	<![endif]-->
+  <input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
+  <div class="visible">
+    {{ content }}
+  </div>
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="{{ " /assets/js/prism.js" | relative_url }}"></script>
+  <script src="{{ " /assets/js/index.min.js" | relative_url }}"></script>
 </body>
+
 </html>
